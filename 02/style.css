@@ -104,33 +104,57 @@ main {
 }
 
 footer {
-  display: flex;
-  margin-left: 17%;
-  margin-right: 17%;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  display: flex; /* Make the footer sections align horizontally */
+  justify-content: space-between; /* Add spacing between sections */
+  gap: 20px; /* Optional: Add a gap between footer-top and footer-bottom */
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
 
+}
+
+.footer-top, .footer-bottom {
+  flex: 1; /* Ensure equal width for both sections */
+  display: flex; /* Make child elements align horizontally within each section */
+  justify-content: space-around; /* Add spacing between the child elements inside each section */
+  gap: 20px;
+  width: 68%;
+  align-items: center;
+  margin-left: 290px;
+  text-align: center;
 }
 
 .footer-top {
+  /* background-color: #dadac0; Optional background for visual separation */
+  padding: 20px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.footer-top h2, .footer-top p {
-}
-
-.footer-top h2 {
-  text-align: center;
-}
-
-.footer-top p {
-  width: 200px;
-  text-align: center;
-}
-
 .footer-bottom {
-  /* display: flex; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #ddd; Optional background for visual separation */
+  padding: 20px;
+}
+
+
+.footer-top div, .footer-bottom div {
+  flex: 1; /* Equal spacing for each section */
+  display: flex; /* Enable Flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Ensure text is centered */
+}
+
+footer h2 {
+  margin: 10px 0; /* Add some spacing above and below the heading */
+}
+
+footer p {
+  margin: 0; /* Remove extra margin for consistent alignment */
+  text-align: justify; /* Optional: Adjust to your preference */
 }
