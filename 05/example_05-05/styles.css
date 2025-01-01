@@ -17,14 +17,20 @@
 
 .grid-item-1 {
   grid-area: middle / center;
+  /* grid-column: center-start / center-end;
+  grid-row: middle-start / middle-end; */
 }
 
 .grid-item-2 {
   grid-area: bottom / right;
+  /* grid-column: right-start / right-end;
+  grid-row: bottom-start / bottom-end; */
 }
 
 .grid-item-3 {
   grid-area: top / left;
+  /* grid-column: left-start / left-end;
+  grid-row: top-start / middle-start; */
 }
 
 .grid-item-4 {

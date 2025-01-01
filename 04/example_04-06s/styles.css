@@ -5,3 +5,40 @@ body {
     font-family: "Oswald", sans-serif;
     color: #ebebeb;
 }
+
+/* p {
+    color: black;
+}
+
+.InlineFlex {
+    color: #ddd;
+    background-color: indigo;
+    display: inline-flex;
+    align-items: center;
+    height: 120px;
+    padding: 0 4px;
+    text-decoration: none;
+    border-radius: 3px;
+} */
+
+.container {
+    background-color: indigo;
+    justify-content: space-evenly;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    /* align-items: center; */
+}
+
+.item {
+    background-color: #34005b;
+    display: flex;
+    /* justify-content: space-between; */
+    height: 100px;
+    flex: 1;
+    border: 1px solid #ebebeb;
+}
+
+.AlignSelf {
+    align-self: flex-end;
+}
